@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <xt-button type='primary'>按钮</xt-button>
+    <xt-button type='primary' icon='xt-icon-edit1'>按钮</xt-button>
   </div>
 </template>
 

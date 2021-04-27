@@ -1,4 +1,4 @@
-# xt-ui
+# xiat-ui
 
 ## 简介
 
@@ -9,20 +9,20 @@
 1. 安装
 
 ```
-npm i xt-ui
+npm i xtian-ui
 ```
 
 2. 全局注册
 
 ```js
-import XtUI from 'xt-ui'
+import XtUI from 'xtian-ui'
 Vue.use(XtUI)
 ```
 
 3. 按需导入
 
 ```js
-import XtUI, { Button, Form } from 'xt-ui'
+import XtUI, { Button, Form } from 'xtian-ui'
 Vue.use(XtUI, {
   components: [Button, Form]
 })
@@ -31,26 +31,79 @@ Vue.use(XtUI, {
 3. 导入样式
 
 ```js
-import 'xt-ui/dist/xt-ui.css'
+import 'xtian-ui/dist/xtian-ui.css'
 ```
 
-4. 导入 font-awesome 字体图标
+4. 导入 font字体图标
 
 ```js
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import {
-  faEnvelope,
-  faStar,
-  faEdit,
-  faTrashAlt,
-  faSmile,
-  faTimesCircle,
-  faEye
-} from '@fortawesome/free-regular-svg-icons'
+import './assets/font/iconfont.css'
 
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+<xiat-button icon='xt-icon-edit1'>按钮</xiat-button>
+
 ```
+
+![](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427124914.png)
+
+![QQ截图20210427124946](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427124946.png)
+
+![QQ截图20210427125025](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125025.png)
+
+![QQ截图20210427125040](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125040.png)
+
+![QQ截图20210427125049](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125049.png)
+
+![QQ截图20210427125100](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125100.png)
+
+![QQ截图20210427125114](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125114.png)
+
+![QQ截图20210427125129](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125129.png)
+
+![QQ截图20210427125138](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125138.png)
+
+![QQ截图20210427125151](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125151.png)
+
+![QQ截图20210427125202](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125202.png)
+
+![QQ截图20210427125219](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125219.png)
+
+![QQ截图20210427125229](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125229.png)
+
+![QQ截图20210427125259](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125259.png)
+
+![QQ截图20210427125310](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125310.png)
+
+![QQ截图20210427125331](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125331.png)
+
+![QQ截图20210427125344](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125344.png)
+
+![QQ截图20210427125355](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125355.png)
+
+![QQ截图20210427125410](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125410.png)
+
+![QQ截图20210427125421](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125421.png)
+
+![QQ截图20210427125433](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125433.png)
+
+![QQ截图20210427125446](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125446.png)
+
+![QQ截图20210427125534](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125534.png)
+
+![QQ截图20210427125545](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125545.png)
+
+![QQ截图20210427125556](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125556.png)
+
+![QQ截图20210427125607](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125607.png)
+
+![QQ截图20210427125626](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125626.png)
+
+![QQ截图20210427125637](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125637.png)
+
+![QQ截图20210427125646](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125646.png)
+
+![QQ截图20210427125657](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125657.png)
+
+![QQ截图20210427125707](D:\OneDrive\桌面\学习\icon图片\QQ截图20210427125707.png)
 
 <br>
 
@@ -63,6 +116,12 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 ### 按钮(Button)
 
 <br>
+
+```
+ <xt-button></xt-button>
+```
+
+
 
 | 属性     | 值               | 描述                                          |
 | -------- | ---------------- | --------------------------------------------- |
@@ -86,16 +145,34 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 <br>
 
-### 对话框(Dialog)
+### 对话框(Dialog <xt-dialog></xt-dialog>)
 
 <br>
 
-| 属性     | 值      | 描述                            |
-| -------- | ------- | ------------------------------- |
-| title    | String  | 对话框头部提示，默认为"提示"    |
-| visiable | Boolean | 对话框可见状态，默认为 false    |
-| top      | String  | 对话框距离顶部位置，默认为 15vh |
-| width    | String  | 对话框宽度，默认为 60%          |
+```
+<xt-dialog
+        :visible.sync='visible'
+        width='30%'
+        top="20vh"
+      >
+        <template v-slot:footer>
+          <xt-button @click="visible = false">取消</xt-button>
+          <xt-button
+            type='primary'
+            @click="visible = false"
+          >确认</xt-button>
+        </template>
+      </xt-dialog>
+```
+
+
+
+| 属性    | 值      | 描述                            |
+| ------- | ------- | ------------------------------- |
+| title   | String  | 对话框头部提示，默认为"提示"    |
+| visible | Boolean | 对话框可见状态，默认为 false    |
+| top     | String  | 对话框距离顶部位置，默认为 15vh |
+| width   | String  | 对话框宽度，默认为 60%          |
 
 <br>
 
@@ -110,14 +187,20 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 <br>
 
-### 输入框(Input)
+### 输入框(Input )
 
 <br>
+
+```
+<xt-input></xt-input>
+```
+
+
 
 | 属性         | 值      | 描述                           |
 | ------------ | ------- | ------------------------------ |
 | placeholder  | String  | 占位符，默认为空字符串         |
-| type         | String  | 表单类型，默认为'text'         |
+| type         | String  | 表单类型，默认为'texiat'         |
 | disabled     | Boolean | 是否禁用，默认为 false         |
 | name         | String  | 表单命名，默认为空             |
 | value        | String  | 表单值，默认为空字符串         |
@@ -126,9 +209,15 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 <br>
 
-### 切换(Switch)
+### 切换(Switch )
 
 <br>
+
+```
+<xt-switch></xt-switch>
+```
+
+
 
 | 属性          | 值      | 描述                          |
 | ------------- | ------- | ----------------------------- |
@@ -137,8 +226,8 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 | disabled      | Boolean | 是否禁用，默认为 false        |
 | activeColor   | String  | 激活状态颜色，默认为#dcdfe6   |
 | inactiveColor | String  | 未激化状态颜色，默认为#dcdfe6 |
-| activeText    | String  | 激活状态文字， 默认为 ''      |
-| inactiveText  | String  | 未激活状态文字， 默认为 ''    |
+| activeTexiat    | String  | 激活状态文字， 默认为 ''      |
+| inactiveTexiat  | String  | 未激活状态文字， 默认为 ''    |
 
 <br>
 
@@ -152,9 +241,15 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 <br>
 
-### 单选框(Radio)
+### 单选框(Radio )
 
 <br>
+
+```
+<xt-radio></xt-radio>
+```
+
+
 
 | 属性  | 值                        | 描述                              |
 | ----- | ------------------------- | --------------------------------- |
@@ -165,11 +260,15 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 <br>
 
-### 单选框组(RadioGroup)
+### 单选框组(RadioGroup )
 
 <br>
 
 用于包裹 radio，通过 v-model 指定组内所有的 radio 的 v-model
+
+```
+<xt-radio-group></xt-radio-group>
+```
 
 <br>
 
@@ -177,9 +276,15 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 <br>
 
-### 复选框(Checkbox)
+### 复选框(Checkbox )
 
 <br>
+
+```
+<xt-checkbox></xt-checkbox>
+```
+
+
 
 | 属性     | 值                        | 描述                              |
 | -------- | ------------------------- | --------------------------------- |
@@ -191,11 +296,15 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 <br>
 
-### 复选框组(CheckboxGroup)
+### 复选框组(CheckboxGroup )
 
 <br>
 
 用于包裹多个 checkbox，通过 v-model 指定组内所有的 checkout 的 v-model
+
+```
+<xt-checkbox-group></xt-checkbox-group>
+```
 
 <br>
 
@@ -203,7 +312,11 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 <br>
 
-### 表单项(Form-item)
+### 表单项(Form-item )
+
+```
+<xt-form-item></xt-form-item>
+```
 
 <br>
 
@@ -213,7 +326,11 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 <br>
 
-### 表单(Form)
+### 表单(Form )
+
+```
+<xt-form></xt-form>
+```
 
 <br>
 
