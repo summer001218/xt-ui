@@ -39,7 +39,7 @@ import 'xtian-ui/dist/xtian-ui.css'
 ```js
 import './assets/font/iconfont.css'
 
-<xiat-button icon='xt-icon-edit1'>按钮</xiat-button>
+<xt-button icon='xt-icon-edit1'>按钮</xt-button>
 
 ```
 
